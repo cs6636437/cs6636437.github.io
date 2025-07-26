@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding-top: 70px;
+        }
+
+        .menu-bar {
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .home-button {
+            background-color: #2196F3;
+            color: white;
+            padding: 10px 16px;
+            font-size: 16px;
+            border-radius: 4px;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            position: relative;
+            margin-right: 20px;
+        }
+
+        .dropdown-toggle {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 16px;
+            font-size: 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            min-width: 160px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 2000;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px 14px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-toggle {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-bar">
+        <a href="Home.html" class="home-button">Home</a>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Lab1</a>
+            <div class="dropdown-content">
+                <a href="Lab1/Lab1no1.html">Lab1 - 1</a>
+                <a href="Lab1/Lab1no2.html">Lab1 - 2</a>
+                <a href="Lab1/Lab1no3.html">Lab1 - 3</a>
+                <a href="Lab1/Lab1no4.html">Lab1 - 4</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Lab2</a>
+            <div class="dropdown-content">
+                <a href="Lab2/Lab2no1.html">Lab2 - 1</a>
+                <a href="Lab2/Lab2no2.html">Lab2 - 2</a>
+                <a href="Lab2/Lab2no3.html">Lab2 - 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="Lab1no5.html" class="dropdown-toggle">Lab1no5</a>
+            <div class="dropdown-content">
+                <a href="Lab1no5/web1/workshop1/index2.html">index2</a>
+                <a href="Lab1no5/web1/workshop1/ZeZar/stuff/home.html">home</a>
+                <a href="Lab1no5/web1/workshop2/classMonday/homework/exercise1.html">exercise1</a>
+                <a href="Lab1no5/web1/index4.html">idex4</a>
+                <a href="Lab1no5/web2/index.html">index</a>
+                <a href="Lab1no5/web2/content/topic/t1.html">t1</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
